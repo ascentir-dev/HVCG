@@ -1,66 +1,37 @@
-import Image from "next/image";
 import { MapPinIcon, ClockIcon, PhoneIcon } from "@/components/icons";
 
-const productLinks = ["Bathrooms", "Windows", "Doors", "Flooring"];
+const serviceLinks = ["Bathroom Remodeling", "Kitchen Renovation", "Basement Finishing", "Home Additions"];
 
-const companyLinks = [
-  "Customer Service",
-  "About",
-  "FAQ",
-  "Reviews",
-  "Careers",
-  "Technology",
-];
+const companyLinks = ["About Us", "Our Process", "Portfolio", "Reviews", "Careers", "Contact"];
 
-const resourceLinks = [
-  "Blog",
-  "Locations",
-  "Affiliate Program",
-  "Penn State Athletics Partnership",
-];
+const resourceLinks = ["Free Estimate", "Financing Options", "Project Gallery", "FAQ", "Blog", "Service Areas"];
 
 const socialLinks = [
-  {
-    href: "https://x.com/westshorehome",
-    src: "/images/social-twitter.svg",
-    alt: "Twitter",
-  },
-  {
-    href: "https://www.linkedin.com/company/westshorehome",
-    src: "/images/social-linkedin.svg",
-    alt: "LinkedIn",
-  },
-  {
-    href: "https://www.facebook.com/WestShoreHomeImprovementandRemodelingLLC/",
-    src: "/images/social-facebook.svg",
-    alt: "Facebook",
-  },
-  {
-    href: "https://www.pinterest.com/westshorehome/",
-    src: "/images/social-pinterest.svg",
-    alt: "Pinterest",
-  },
-  {
-    href: "https://www.instagram.com/westshorehome/",
-    src: "/images/social-instagram.svg",
-    alt: "Instagram",
-  },
+  { href: "#", src: "/images/social-facebook.svg", alt: "Facebook" },
+  { href: "#", src: "/images/social-instagram.svg", alt: "Instagram" },
+  { href: "#", src: "/images/social-linkedin.svg", alt: "LinkedIn" },
 ];
 
 export function Footer() {
   return (
     <footer className="bg-[oklch(0.18_0.08_263)] text-white pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Top area: Logo + Social */}
-        <Image
-          src="/images/logo-footer.png"
-          alt="West Shore Home"
-          width={180}
-          height={60}
-          className="mb-6"
-        />
 
-        <div className="flex gap-4 mb-8">
+        {/* Logo */}
+        <div className="mb-8">
+          <div className="flex flex-col leading-none mb-2">
+            <span className="text-2xl font-black tracking-tight">HVCG</span>
+            <span className="text-xs font-semibold text-white/60 uppercase tracking-widest mt-0.5">
+              Hudson Valley Contracting Group
+            </span>
+          </div>
+          <p className="text-sm text-white/60 max-w-xs mt-3">
+            Quality home remodeling for the Hudson Valley since 2009.
+          </p>
+        </div>
+
+        {/* Social icons */}
+        <div className="flex gap-4 mb-10">
           {socialLinks.map((link) => (
             <a
               key={link.alt}
@@ -68,90 +39,64 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={link.alt}
+              className="size-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition text-white/70 hover:text-white text-xs font-bold"
             >
-              <Image
-                src={link.src}
-                alt={link.alt}
-                width={24}
-                height={24}
-                className="opacity-60 hover:opacity-100 transition brightness-0 invert"
-              />
+              {link.alt[0]}
             </a>
           ))}
         </div>
 
         {/* Footer columns */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
-          {/* Column 1 — Products */}
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-white/60 mb-4">
-              Products
-            </p>
+            <p className="text-xs font-bold uppercase tracking-widest text-white/50 mb-4">Services</p>
             <ul>
-              {productLinks.map((link) => (
+              {serviceLinks.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-sm text-white/80 hover:text-white transition block mb-2">
-                    {link}
-                  </a>
+                  <a href="#" className="text-sm text-white/75 hover:text-white transition block mb-2">{link}</a>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Column 2 — Company */}
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-white/60 mb-4">
-              Company
-            </p>
+            <p className="text-xs font-bold uppercase tracking-widest text-white/50 mb-4">Company</p>
             <ul>
               {companyLinks.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-sm text-white/80 hover:text-white transition block mb-2">
-                    {link}
-                  </a>
+                  <a href="#" className="text-sm text-white/75 hover:text-white transition block mb-2">{link}</a>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Column 3 — Resources */}
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-white/60 mb-4">
-              Resources
-            </p>
+            <p className="text-xs font-bold uppercase tracking-widest text-white/50 mb-4">Resources</p>
             <ul>
               {resourceLinks.map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-sm text-white/80 hover:text-white transition block mb-2">
-                    {link}
-                  </a>
+                  <a href="#" className="text-sm text-white/75 hover:text-white transition block mb-2">{link}</a>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Column 4 — Contact */}
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-white/60 mb-4">
-              Contact Us
-            </p>
+            <p className="text-xs font-bold uppercase tracking-widest text-white/50 mb-4">Contact</p>
             <div className="space-y-3">
-              <div className="flex items-start gap-2 text-sm text-white/80">
-                <MapPinIcon className="mt-0.5 shrink-0 text-white/50" />
-                <span>3 Crossgate Drive, Mechanicsburg, PA 17050</span>
+              <div className="flex items-start gap-2 text-sm text-white/75">
+                <MapPinIcon className="mt-0.5 shrink-0 text-white/40 size-4" />
+                <span>Hudson Valley, New York</span>
               </div>
-              <div className="flex items-center gap-2 text-sm text-white/80">
-                <PhoneIcon className="shrink-0 text-white/50" />
-                <a href="tel:+17176974033" className="hover:text-white transition">
-                  (717) 697-4033
-                </a>
+              <div className="flex items-center gap-2 text-sm text-white/75">
+                <PhoneIcon className="shrink-0 text-white/40 size-4" />
+                <a href="tel:+18455550123" className="hover:text-white transition">(845) 555-0123</a>
               </div>
-              <div className="flex items-start gap-2 text-sm text-white/80">
-                <ClockIcon className="mt-0.5 shrink-0 text-white/50" />
+              <div className="flex items-start gap-2 text-sm text-white/75">
+                <ClockIcon className="mt-0.5 shrink-0 text-white/40 size-4" />
                 <span>
-                  Mon–Sat: 8:00 AM – 8:00 PM EST
-                  <br />
-                  Sun: 9:30 AM – 5:00 PM EST
+                  Mon–Fri: 8:00 AM – 6:00 PM<br />
+                  Sat: 9:00 AM – 4:00 PM
                 </span>
               </div>
             </div>
@@ -159,20 +104,14 @@ export function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/10 pt-6 mt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-          <p className="text-xs text-white/50">
-            © 2025 West Shore Home. All rights reserved. | PA HIC Registration: PA012954
+        <div className="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+          <p className="text-xs text-white/40">
+            © 2026 Hudson Valley Contracting Group. All rights reserved. · Licensed &amp; Insured · NY License #HIC-XXXXXX
           </p>
-          <div className="flex gap-4 text-xs text-white/50">
-            <a href="#" className="hover:text-white/80 transition">
-              Privacy Policy
-            </a>
-            <a href="#" className="hover:text-white/80 transition">
-              Terms of Service
-            </a>
-            <a href="#" className="hover:text-white/80 transition">
-              Sitemap
-            </a>
+          <div className="flex gap-4 text-xs text-white/40">
+            <a href="#" className="hover:text-white/70 transition">Privacy Policy</a>
+            <a href="#" className="hover:text-white/70 transition">Terms of Service</a>
+            <a href="#" className="hover:text-white/70 transition">Sitemap</a>
           </div>
         </div>
       </div>

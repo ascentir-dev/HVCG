@@ -10,13 +10,13 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Bathrooms, Windows, Floors, & Doors | West Shore Home",
+  title: "Bathroom, Kitchen & Home Remodeling | Hudson Valley Contracting Group",
   description:
-    "Transform your home with a trusted name in home improvement projects. Affordable financing, technology-driven accuracy, and no money down with approved credit.",
+    "Hudson Valley's trusted contractor for bathroom remodels, kitchen renovations, basement finishing, and home additions. Quality craftsmanship, transparent pricing.",
   openGraph: {
-    title: "Bathrooms, Windows, Floors, & Doors | West Shore Home",
+    title: "Bathroom, Kitchen & Home Remodeling | Hudson Valley Contracting Group",
     description:
-      "Transform your home with a trusted name in home improvement projects.",
+      "Hudson Valley's trusted contractor for bathroom remodels, kitchen renovations, basement finishing, and home additions.",
     type: "website",
   },
 };

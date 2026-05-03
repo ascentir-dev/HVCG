@@ -5,25 +5,25 @@ const pillars = [
     icon: <UserGroupIcon />,
     title: "People You Can Trust In Your Home",
     description:
-      "Every installer is a full-time, background-checked West Shore Home employee. No subcontractors, no strangers — just trained professionals who care.",
+      "Every member of our crew is a background-checked HVCG employee. No day-laborers, no unknown subcontractors — just skilled professionals who respect your space.",
   },
   {
     icon: <ShieldCheckIcon />,
-    title: "No Surprises. None.",
+    title: "No Surprises. Ever.",
     description:
-      "We quote your project clearly and completely. The price we quote is the price you pay — no hidden fees, no add-ons, no surprises.",
+      "Your written estimate is your final price. We identify every potential issue before we start so the number you approve is the number you pay.",
   },
   {
     icon: <HomeIcon />,
     title: "We Treat Your Home Like Our Own",
     description:
-      "We protect your home during installation, clean up completely when we're done, and leave you with a transformation you'll love.",
+      "Daily clean-up, floor protection, careful material staging — we leave your home cleaner than we found it, every single day on the job.",
   },
   {
     icon: <StarIcon />,
-    title: "We're With You Every Step",
+    title: "Your Satisfaction Is Guaranteed",
     description:
-      "From consultation to completion, we're transparent, communicative, and accountable. Your satisfaction is our guarantee.",
+      "We stand behind every project with a full workmanship warranty. If something isn&apos;t right, we make it right — no arguments, no excuses.",
   },
 ];
 
@@ -31,18 +31,16 @@ export function DifferenceSection() {
   return (
     <section className="bg-[oklch(0.96_0.02_263)] py-20">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Top heading */}
         <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">
-          The West Shore Home Difference
+          Why Homeowners Choose HVCG
         </p>
         <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-3">
-          Results you&apos;ll love. An experience you&apos;ll remember.
+          Results you&apos;ll love.<br />An experience you&apos;ll remember.
         </h2>
         <p className="text-base text-gray-600 mb-12">
-          65,000+ five-star reviews from homeowners like you.
+          Hundreds of five-star reviews from Hudson Valley homeowners just like you.
         </p>
 
-        {/* Trust pillars grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
           {pillars.map((pillar) => (
             <div
@@ -58,15 +56,13 @@ export function DifferenceSection() {
           ))}
         </div>
 
-        {/* Testimonial block */}
         <div className="bg-primary rounded-2xl p-10 text-white text-center max-w-3xl mx-auto">
           <QuoteIcon className="text-white/30 mx-auto mb-4" />
           <blockquote className="text-xl md:text-2xl font-medium italic mb-6 leading-relaxed">
-            &ldquo;The young men who performed the work were amazing! They left everything neat and
-            clean.&rdquo;
+            &ldquo;HVCG transformed our outdated kitchen into something out of a magazine. On time, on budget, and the crew was incredibly respectful of our home.&rdquo;
           </blockquote>
-          <p className="font-bold">— The Caskeys</p>
-          <p className="text-white/70 text-sm mt-1">BBB Review</p>
+          <p className="font-bold">— The Martínez Family</p>
+          <p className="text-white/70 text-sm mt-1">Kingston, NY · Google Review</p>
         </div>
       </div>
     </section>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ArrowRightIcon } from "@/components/icons";
 
 interface Product {
+  id: string;
   name: string;
   tagline: string;
   description: string;
@@ -12,55 +13,62 @@ interface Product {
 
 const products: Product[] = [
   {
+    id: "bathrooms",
     name: "Bathroom Remodeling",
-    tagline: "Refresh. Reimagine.",
+    tagline: "Your sanctuary, reimagined.",
     description:
-      "Complete bathroom redesigns, upgraded baths and showers, exclusive wall surrounds, and safety features — done in 2–3 days.",
+      "From full gut renovations to walk-in showers, tile work, and custom vanities — we transform bathrooms into spaces you love to be in.",
     image: "/images/product-bathroom.jpg",
-    imageAlt: "Full bathroom remodel",
+    imageAlt: "Custom bathroom remodel",
     href: "#bathrooms",
   },
   {
-    name: "Window Replacement",
-    tagline: "Enhance your home. Save on energy bills.",
+    id: "kitchens",
+    name: "Kitchen Renovation",
+    tagline: "The heart of your home, elevated.",
     description:
-      "Say goodbye to stuck windows, drafts, and high energy bills. Upgrade your curb appeal with beautiful, efficient windows.",
-    image: "/images/product-windows.jpg",
-    imageAlt: "Window replacement",
-    href: "#windows",
+      "Custom cabinetry, new countertops, open layouts, and modern fixtures. We rebuild kitchens that are as functional as they are beautiful.",
+    image: "/images/service-kitchen.jpg",
+    imageAlt: "Modern kitchen renovation",
+    href: "#kitchens",
   },
   {
-    name: "Door Installation",
-    tagline: "Create a great first impression.",
+    id: "basements",
+    name: "Basement Finishing",
+    tagline: "Unlock your home's hidden potential.",
     description:
-      "Refresh the look of your home, improve energy efficiency, and add security with a brand-new entry door.",
-    image: "/images/product-doors.jpg",
-    imageAlt: "Entry door installation",
-    href: "#doors",
+      "Turn unfinished square footage into a living area, home office, gym, or entertainment space — fully permitted and built to code.",
+    image: "/images/service-basement.jpg",
+    imageAlt: "Finished basement remodel",
+    href: "#basements",
   },
   {
-    name: "Flooring Installation",
-    tagline: "Getting new floors has never been easier.",
+    id: "additions",
+    name: "Home Additions",
+    tagline: "More space. More life.",
     description:
-      "Worn carpets, squeaky boards, cold floors — we replace them all. Beautiful, durable flooring for real life.",
-    image: "/images/product-flooring.jpg",
-    imageAlt: "Flooring installation",
-    href: "#flooring",
+      "Whether it's an extra bedroom, a sunroom, or a full second-story addition — we design and build seamlessly with your existing home.",
+    image: "/images/service-addition.jpg",
+    imageAlt: "Home addition construction",
+    href: "#additions",
   },
 ];
 
 function ProductCard({ product }: { product: Product }) {
   return (
-    <div className="group relative overflow-hidden aspect-[4/3] md:aspect-auto md:min-h-[480px]">
+    <div
+      id={product.id}
+      className="group relative overflow-hidden aspect-[4/3] md:aspect-auto md:min-h-[480px]"
+    >
       <Image
         src={product.image}
         alt={product.imageAlt}
         fill
         className="object-cover group-hover:scale-105 transition-transform duration-500"
       />
-      <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors" />
+      <div className="absolute inset-0 bg-black/45 group-hover:bg-black/55 transition-colors" />
       <div className="absolute inset-0 flex flex-col justify-end p-8 text-white">
-        <p className="text-xs font-semibold uppercase tracking-widest text-white/80 mb-1">
+        <p className="text-xs font-semibold uppercase tracking-widest text-white/70 mb-1">
           {product.name}
         </p>
         <h3 className="text-2xl md:text-3xl font-black mb-3">{product.tagline}</h3>
@@ -84,12 +92,12 @@ export function ProductsSection() {
           Our Services
         </p>
         <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-12 text-center">
-          Home remodeling, done right.
+          Everything your home needs.
         </h2>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
         {products.map((product) => (
-          <ProductCard key={product.href} product={product} />
+          <ProductCard key={product.id} product={product} />
         ))}
       </div>
     </section>
