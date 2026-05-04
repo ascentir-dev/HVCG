@@ -9,8 +9,8 @@ import { serviceSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Home Additions in Hudson Valley, NY",
   description: "Custom home addition contractors serving Orange, Ulster & Dutchess Counties. Room additions, second stories, sunrooms, and in-law suites. Free estimates.",
-  openGraph: { title: "Home Additions Hudson Valley | HVCG", url: "https://hvcg.com/services/additions" },
-  alternates: { canonical: "https://hvcg.com/services/additions" },
+  openGraph: { title: "Home Additions Hudson Valley | HVCG", url: "https://www.hudsonvalleycontractinggroup.com/services/additions" },
+  alternates: { canonical: "https://www.hudsonvalleycontractinggroup.com/services/additions" },
 };
 
 const FEATURES = [

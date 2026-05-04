@@ -9,8 +9,8 @@ import { serviceSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Whole-Home Renovations in Hudson Valley, NY",
   description: "Complete whole-home renovation experts in Hudson Valley. Kitchen, bath, open floor plans, historic restoration, and total home transformations. Free estimates.",
-  openGraph: { title: "Whole-Home Renovations Hudson Valley | HVCG", url: "https://hvcg.com/services/whole-home" },
-  alternates: { canonical: "https://hvcg.com/services/whole-home" },
+  openGraph: { title: "Whole-Home Renovations Hudson Valley | HVCG", url: "https://www.hudsonvalleycontractinggroup.com/services/whole-home" },
+  alternates: { canonical: "https://www.hudsonvalleycontractinggroup.com/services/whole-home" },
 };
 
 const FEATURES = [

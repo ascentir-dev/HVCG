@@ -7,8 +7,8 @@ import { CheckIcon } from "@/components/icons";
 export const metadata: Metadata = {
   title: "Home Remodeling Financing Options",
   description: "Flexible financing for your Hudson Valley home remodel. Pre-qualify in minutes with no impact to your credit score. Loans from $5,000 to $100,000+.",
-  openGraph: { title: "Financing Options | HVCG", url: "https://hvcg.com/financing" },
-  alternates: { canonical: "https://hvcg.com/financing" },
+  openGraph: { title: "Financing Options | HVCG", url: "https://www.hudsonvalleycontractinggroup.com/financing" },
+  alternates: { canonical: "https://www.hudsonvalleycontractinggroup.com/financing" },
 };
 
 const OPTIONS = [

@@ -7,8 +7,8 @@ import { BUSINESS } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Contact Us — Free Home Remodeling Estimate",
   description: "Contact Hudson Valley Contracting Group for a free in-home estimate. Serving Orange, Ulster & Dutchess Counties, NY. Call (845) 728-5247.",
-  openGraph: { title: "Contact HVCG | Free Estimate", url: "https://hvcg.com/contact" },
-  alternates: { canonical: "https://hvcg.com/contact" },
+  openGraph: { title: "Contact HVCG | Free Estimate", url: "https://www.hudsonvalleycontractinggroup.com/contact" },
+  alternates: { canonical: "https://www.hudsonvalleycontractinggroup.com/contact" },
 };
 
 export default function ContactPage() {

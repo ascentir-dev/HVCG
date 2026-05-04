@@ -9,8 +9,8 @@ import { serviceSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Kitchen Remodeling in Hudson Valley, NY",
   description: "Custom kitchen remodeling by HVCG — cabinetry, countertops, islands, and full gut renovations across Orange, Ulster & Dutchess Counties. Free estimates.",
-  openGraph: { title: "Kitchen Remodeling Hudson Valley | HVCG", url: "https://hvcg.com/services/kitchens" },
-  alternates: { canonical: "https://hvcg.com/services/kitchens" },
+  openGraph: { title: "Kitchen Remodeling Hudson Valley | HVCG", url: "https://www.hudsonvalleycontractinggroup.com/services/kitchens" },
+  alternates: { canonical: "https://www.hudsonvalleycontractinggroup.com/services/kitchens" },
 };
 
 const FEATURES = [

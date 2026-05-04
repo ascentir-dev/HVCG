@@ -27,8 +27,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.excerpt,
-    openGraph: { title: post.title, description: post.excerpt, url: `https://hvcg.com/blog/${slug}` },
-    alternates: { canonical: `https://hvcg.com/blog/${slug}` },
+    openGraph: { title: post.title, description: post.excerpt, url: `https://www.hudsonvalleycontractinggroup.com/blog/${slug}` },
+    alternates: { canonical: `https://www.hudsonvalleycontractinggroup.com/blog/${slug}` },
   };
 }
 

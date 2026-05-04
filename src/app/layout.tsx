@@ -14,7 +14,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hvcg.com"),
+  metadataBase: new URL("https://www.hudsonvalleycontractinggroup.com"),
   title: {
     default: "Home Remodeling in Hudson Valley NY | Hudson Valley Contracting Group",
     template: "%s | Hudson Valley Contracting Group",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     images: ["/images/hero-background.jpg"],
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: "https://hvcg.com" },
+  alternates: { canonical: "https://www.hudsonvalleycontractinggroup.com" },
 };
 
 export default function RootLayout({

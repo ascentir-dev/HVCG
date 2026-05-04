@@ -9,8 +9,8 @@ import { serviceSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Basement Finishing in Hudson Valley, NY",
   description: "Transform your unfinished basement into usable living space — home theaters, in-law suites, home offices, and more. Serving Orange, Ulster & Dutchess Counties.",
-  openGraph: { title: "Basement Finishing Hudson Valley | HVCG", url: "https://hvcg.com/services/basements" },
-  alternates: { canonical: "https://hvcg.com/services/basements" },
+  openGraph: { title: "Basement Finishing Hudson Valley | HVCG", url: "https://www.hudsonvalleycontractinggroup.com/services/basements" },
+  alternates: { canonical: "https://www.hudsonvalleycontractinggroup.com/services/basements" },
 };
 
 const FEATURES = [

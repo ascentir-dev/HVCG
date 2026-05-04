@@ -6,8 +6,8 @@ import { ServiceCTA } from "@/components/ServiceCTA";
 export const metadata: Metadata = {
   title: "Frequently Asked Questions",
   description: "Answers to common questions about home remodeling in Hudson Valley, NY — timelines, costs, permits, financing, warranties, and more.",
-  openGraph: { title: "FAQ | Hudson Valley Contracting Group", url: "https://hvcg.com/faq" },
-  alternates: { canonical: "https://hvcg.com/faq" },
+  openGraph: { title: "FAQ | Hudson Valley Contracting Group", url: "https://www.hudsonvalleycontractinggroup.com/faq" },
+  alternates: { canonical: "https://www.hudsonvalleycontractinggroup.com/faq" },
 };
 
 const FAQS: FAQItem[] = [

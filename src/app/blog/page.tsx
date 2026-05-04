@@ -8,8 +8,8 @@ import { blogPosts } from "@/lib/blog";
 export const metadata: Metadata = {
   title: "Home Remodeling Blog — Tips & Ideas",
   description: "Expert remodeling tips, cost guides, and project ideas for Hudson Valley homeowners from the team at HVCG.",
-  openGraph: { title: "Blog | Hudson Valley Contracting Group", url: "https://hvcg.com/blog" },
-  alternates: { canonical: "https://hvcg.com/blog" },
+  openGraph: { title: "Blog | Hudson Valley Contracting Group", url: "https://www.hudsonvalleycontractinggroup.com/blog" },
+  alternates: { canonical: "https://www.hudsonvalleycontractinggroup.com/blog" },
 };
 
 const CATEGORY_COLORS: Record<string, string> = {

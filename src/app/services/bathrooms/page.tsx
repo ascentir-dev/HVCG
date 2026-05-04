@@ -9,8 +9,8 @@ import { serviceSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Bathroom Remodeling in Hudson Valley, NY",
   description: "Expert bathroom remodeling — walk-in showers, soaking tubs, custom tile, and full renovations in Orange, Ulster & Dutchess Counties. Free estimates.",
-  openGraph: { title: "Bathroom Remodeling Hudson Valley | HVCG", url: "https://hvcg.com/services/bathrooms" },
-  alternates: { canonical: "https://hvcg.com/services/bathrooms" },
+  openGraph: { title: "Bathroom Remodeling Hudson Valley | HVCG", url: "https://www.hudsonvalleycontractinggroup.com/services/bathrooms" },
+  alternates: { canonical: "https://www.hudsonvalleycontractinggroup.com/services/bathrooms" },
 };
 
 const FEATURES = [

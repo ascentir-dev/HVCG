@@ -7,8 +7,8 @@ import { serviceSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Home Remodeling Services in Hudson Valley, NY",
   description: "Full-service residential remodeling — kitchens, bathrooms, basements, home additions, and whole-home renovations in Orange, Ulster & Dutchess Counties.",
-  openGraph: { title: "Home Remodeling Services | HVCG", url: "https://hvcg.com/services" },
-  alternates: { canonical: "https://hvcg.com/services" },
+  openGraph: { title: "Home Remodeling Services | HVCG", url: "https://www.hudsonvalleycontractinggroup.com/services" },
+  alternates: { canonical: "https://www.hudsonvalleycontractinggroup.com/services" },
 };
 
 const SERVICES = [

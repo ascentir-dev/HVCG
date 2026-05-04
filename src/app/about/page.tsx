@@ -10,8 +10,8 @@ import { BUSINESS } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "About Us — Hudson Valley Remodeling Experts Since 2009",
   description: "Since 2009, HVCG has been transforming Hudson Valley homes. Licensed, insured, and trusted by hundreds of homeowners in Orange, Ulster & Dutchess Counties.",
-  openGraph: { title: "About HVCG | Hudson Valley Contracting Group", url: "https://hvcg.com/about" },
-  alternates: { canonical: "https://hvcg.com/about" },
+  openGraph: { title: "About HVCG | Hudson Valley Contracting Group", url: "https://www.hudsonvalleycontractinggroup.com/about" },
+  alternates: { canonical: "https://www.hudsonvalleycontractinggroup.com/about" },
 };
 
 const CAPABILITIES = [

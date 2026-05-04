@@ -11,7 +11,7 @@ export const BUSINESS = {
     zip: "12550",
     region: "Orange County",
   },
-  url: "https://hvcg.com",
+  url: "https://www.hudsonvalleycontractinggroup.com",
   logo: "/content/wsh_logo_blue.webp",
   description:
     "Hudson Valley Contracting Group is a full-service residential remodeling company serving Orange, Ulster, and Dutchess Counties, NY. We specialize in kitchen remodeling, bathroom renovations, basement finishing, home additions, and whole-home renovations.",

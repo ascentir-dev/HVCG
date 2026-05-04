@@ -6,8 +6,8 @@ import { PortfolioGrid } from "@/components/PortfolioGrid";
 export const metadata: Metadata = {
   title: "Project Portfolio — Remodeling Gallery",
   description: "Browse HVCG's portfolio of kitchen, bathroom, basement, and home addition projects across Orange, Ulster & Dutchess Counties, NY.",
-  openGraph: { title: "Portfolio | Hudson Valley Contracting Group", url: "https://hvcg.com/portfolio" },
-  alternates: { canonical: "https://hvcg.com/portfolio" },
+  openGraph: { title: "Portfolio | Hudson Valley Contracting Group", url: "https://www.hudsonvalleycontractinggroup.com/portfolio" },
+  alternates: { canonical: "https://www.hudsonvalleycontractinggroup.com/portfolio" },
 };
 
 const CATEGORIES = ["All", "Kitchens", "Bathrooms", "Basements", "Additions", "Whole-Home"];
