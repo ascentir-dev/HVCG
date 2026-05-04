@@ -28,6 +28,8 @@ const CALL_TIMES = [
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
   const [form, setForm] = useState({
     firstName: "",
     lastName: "",
@@ -49,9 +51,23 @@ export function ContactForm() {
     setForm((prev) => ({ ...prev, [target.name]: value }));
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setSubmitted(true);
+    setLoading(true);
+    setError("");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ formType: "contact", ...form }),
+      });
+      if (!res.ok) throw new Error("Send failed");
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong. Please call us directly at (845) 728-5247.");
+    } finally {
+      setLoading(false);
+    }
   }
 
   if (submitted) {
@@ -153,11 +169,16 @@ export function ContactForm() {
         </label>
       </div>
 
+      {error && (
+        <p className="text-sm text-red-600 bg-red-50 border border-red-200 rounded px-4 py-3">{error}</p>
+      )}
+
       <button
         type="submit"
-        className="w-full bg-primary text-white font-bold text-sm uppercase tracking-wider px-6 py-4 rounded-sm hover:opacity-90 transition-opacity"
+        disabled={loading}
+        className="w-full bg-primary text-white font-bold text-sm uppercase tracking-wider px-6 py-4 rounded-sm hover:opacity-90 transition-opacity disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        Request My Free Estimate
+        {loading ? "Sending…" : "Request My Free Estimate"}
       </button>
 
       <p className="text-xs text-gray-400 text-center">

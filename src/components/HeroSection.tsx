@@ -47,15 +47,31 @@ const inputClass =
 export function HeroSection() {
   const [form, setForm] = useState<FormState>(INITIAL_FORM)
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState("")
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) {
     const { name, value } = e.target
     setForm((prev) => ({ ...prev, [name]: value }))
   }
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    setSubmitted(true)
+    setLoading(true)
+    setError("")
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ formType: "quote", ...form }),
+      })
+      if (!res.ok) throw new Error("Send failed")
+      setSubmitted(true)
+    } catch {
+      setError("Something went wrong. Please call us directly.")
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -159,11 +175,15 @@ export function HeroSection() {
                           ))}
                         </select>
                       </div>
+                      {error && (
+                        <p className="text-xs text-red-600 bg-red-50 border border-red-200 rounded px-3 py-2">{error}</p>
+                      )}
                       <button
                         type="submit"
-                        className="w-full bg-primary text-white font-bold py-3.5 text-sm uppercase tracking-wider rounded-sm hover:opacity-90 active:scale-[0.98] transition-all duration-150"
+                        disabled={loading}
+                        className="w-full bg-primary text-white font-bold py-3.5 text-sm uppercase tracking-wider rounded-sm hover:opacity-90 active:scale-[0.98] transition-all duration-150 disabled:opacity-60 disabled:cursor-not-allowed"
                       >
-                        Request Free Estimate
+                        {loading ? "Sending…" : "Request Free Estimate"}
                       </button>
                       <p className="text-[10px] text-gray-400 text-center">
                         By submitting you agree to be contacted by Hudson Valley Contracting Group.
