@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const TO_EMAIL = "frank.f@hudsonvalleycontractinggroup.com";
-const FROM_EMAIL = "noreply@hudsonvalleycontractinggroup.com";
+const FROM_EMAIL = "onboarding@resend.dev";
 
 function row(label: string, value: string | undefined) {
   if (!value) return "";
