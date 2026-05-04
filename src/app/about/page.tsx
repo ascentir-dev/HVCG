@@ -78,7 +78,8 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-6">Our Story</h2>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary mb-3">Our History</p>
+              <h2 className="font-display text-3xl md:text-4xl font-bold text-gray-900 tracking-tight leading-[1.1] mb-6">Our Story</h2>
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
                   Hudson Valley Contracting Group was founded in 2009 by a master carpenter who believed Hudson Valley homeowners deserved better — better craftsmanship, more transparent pricing, and a contractor who actually showed up when they said they would.
@@ -125,8 +126,9 @@ export default function AboutPage() {
       <section className="bg-[oklch(0.96_0.02_263)] py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-3">Everything Under One Roof</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">One contractor. Every trade. No juggling multiple vendors, no finger-pointing when something goes wrong, no coordination headaches.</p>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary mb-3">Our Capabilities</p>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-gray-900 tracking-tight leading-[1.1] mb-3">Everything Under One Roof</h2>
+            <p className="text-gray-500 font-light max-w-2xl mx-auto leading-relaxed">One contractor. Every trade. No juggling multiple vendors, no finger-pointing when something goes wrong, no coordination headaches.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {CAPABILITIES.map((c, i) => (
@@ -150,8 +152,9 @@ export default function AboutPage() {
       <section id="service-area" className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-3">Proudly Serving the Hudson Valley</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">We&apos;re a local company — our crews live and work in the same communities we build in. That makes a difference.</p>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary mb-3">Service Area</p>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-gray-900 tracking-tight leading-[1.1] mb-3">Proudly Serving the Hudson Valley</h2>
+            <p className="text-gray-500 font-light max-w-2xl mx-auto leading-relaxed">We&apos;re a local company — our crews live and work in the same communities we build in. That makes a difference.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {COUNTIES.map((county) => (
@@ -177,7 +180,8 @@ export default function AboutPage() {
       {/* Why Us */}
       <section className="wsh-navy-gradient py-20">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl font-black text-white mb-10 text-center">Why Hudson Valley Homeowners Choose Us</h2>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/50 mb-3 text-center">The HVCG Difference</p>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-white tracking-tight leading-[1.1] mb-10 text-center">Why Hudson Valley Homeowners Choose Us</h2>
           <div className="grid sm:grid-cols-2 gap-6">
             {[
               { title: "One Point of Contact", desc: "Your project manager is your single contact from estimate through final walkthrough. No runaround, no confusion." },

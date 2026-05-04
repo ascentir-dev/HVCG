@@ -76,22 +76,23 @@ export function HeroSection() {
           {/* Left: text content with staggered entrance */}
           <div className="flex-1 md:max-w-[55%]">
             <div
-              className="inline-flex items-center bg-white/10 text-white text-xs font-semibold uppercase tracking-wide rounded-full px-3 py-1 mb-4"
+              className="inline-flex items-center bg-white/10 backdrop-blur-sm text-white text-[11px] font-semibold uppercase tracking-[0.18em] rounded-full px-4 py-1.5 mb-5 border border-white/20"
               style={{ animation: "reveal-up 0.5s 0.1s cubic-bezier(0.22,1,0.36,1) both" }}
             >
               Hudson Valley&apos;s Trusted Contractor
             </div>
             <h1
-              className="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-tight"
+              className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.06] tracking-tight"
               style={{ animation: "reveal-up 0.6s 0.2s cubic-bezier(0.22,1,0.36,1) both" }}
             >
-              Craftsmanship<br />you can trust.
+              Craftsmanship<br />
+              <em className="not-italic text-white/90">you can trust.</em>
             </h1>
             <p
-              className="text-xl md:text-2xl text-white/90 font-medium mt-3 mb-8"
+              className="text-lg md:text-xl text-white/75 font-light mt-4 mb-8 leading-relaxed max-w-lg"
               style={{ animation: "reveal-up 0.6s 0.35s cubic-bezier(0.22,1,0.36,1) both" }}
             >
-              Home remodeling, built to last.
+              Premium home remodeling across the Hudson Valley — kitchens, bathrooms, basements & more.
             </p>
             <ul className="flex flex-col gap-3">
               {FEATURES.map((feature, i) => (

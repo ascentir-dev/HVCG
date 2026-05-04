@@ -84,7 +84,7 @@ export default function FinancingPage() {
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-3">Financing Options Available</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-gray-900 tracking-tight leading-[1.1] mb-3">Financing Options Available</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">We partner with leading lenders to offer options that fit every project size and financial situation.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -120,7 +120,7 @@ export default function FinancingPage() {
 
       <section className="bg-[oklch(0.96_0.02_263)] py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-10 text-center">How It Works</h2>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-gray-900 tracking-tight leading-[1.1] mb-10 text-center">How It Works</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {STEPS.map((s) => (
               <div key={s.num} className="bg-white rounded-lg p-6 shadow-sm text-center">
@@ -135,7 +135,7 @@ export default function FinancingPage() {
 
       <section className="bg-white py-20">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-3 text-center">Sample Monthly Payments</h2>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-gray-900 tracking-tight leading-[1.1] mb-3 text-center">Sample Monthly Payments</h2>
           <p className="text-gray-600 text-center mb-8 text-sm">Estimates based on a fixed-rate home improvement loan. Actual rates vary by creditworthiness.</p>
           <div className="overflow-x-auto rounded-lg border border-gray-200 shadow-sm">
             <table className="w-full text-sm">
@@ -181,7 +181,7 @@ export default function FinancingPage() {
 
       <section className="bg-[oklch(0.96_0.02_263)] py-16">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-10 text-center">Why Finance Your Remodel?</h2>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-gray-900 tracking-tight leading-[1.1] mb-10 text-center">Why Finance Your Remodel?</h2>
           <div className="grid sm:grid-cols-2 gap-6">
             {[
               { title: "Preserve Your Cash Flow", desc: "Keep your savings intact for emergencies and other goals — spread project costs over manageable monthly payments." },

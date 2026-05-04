@@ -60,7 +60,7 @@ export default function AdditionsPage() {
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-3">Types of Additions We Build</h2>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-gray-900 tracking-tight leading-[1.1] mb-3">Types of Additions We Build</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">Every addition is designed by our team and built by our crews — no juggling architects, engineers, and GCs separately.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -81,7 +81,7 @@ export default function AdditionsPage() {
 
       <section className="bg-[oklch(0.96_0.02_263)] py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-10 text-center">Our Process</h2>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-gray-900 tracking-tight leading-[1.1] mb-10 text-center">Our Process</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {PROCESS.map((p) => (
               <div key={p.step} className="bg-white rounded-lg p-6 shadow-sm text-center">

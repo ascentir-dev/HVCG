@@ -28,7 +28,8 @@ export function FAQSection({ faqs, heading = "Frequently Asked Questions", inclu
         />
       )}
       <div className="max-w-3xl mx-auto px-6">
-        <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-10 text-center">{heading}</h2>
+        <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary mb-3 text-center">Common Questions</p>
+        <h2 className="font-display text-3xl md:text-4xl font-bold text-gray-900 tracking-tight leading-[1.1] mb-10 text-center">{heading}</h2>
         <div className="divide-y divide-gray-200">
           {faqs.map((faq, i) => (
             <div key={i}>

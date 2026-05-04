@@ -56,11 +56,14 @@ export function Header() {
         <div className={cn("flex items-center justify-between transition-all duration-300", scrolled ? "h-14" : "h-16")}>
 
           {/* Logo */}
-          <Link href="/" className="flex-shrink-0 flex items-center gap-2" onClick={() => setMobileOpen(false)}>
+          <Link href="/" className="flex-shrink-0 flex items-center gap-2.5" onClick={() => setMobileOpen(false)}>
+            <div className="w-8 h-8 rounded-sm bg-primary flex items-center justify-center flex-shrink-0">
+              <span className="text-white text-xs font-black tracking-tight">HV</span>
+            </div>
             <div className="flex flex-col leading-none">
-              <span className="text-xl font-black text-primary tracking-tight">HVCG</span>
-              <span className="text-[10px] font-semibold text-gray-500 uppercase tracking-widest">
-                Hudson Valley Contracting Group
+              <span className="font-display text-lg font-bold text-gray-900 tracking-tight leading-none">Hudson Valley</span>
+              <span className="text-[9px] font-semibold text-primary uppercase tracking-[0.15em] mt-0.5">
+                Contracting Group
               </span>
             </div>
           </Link>

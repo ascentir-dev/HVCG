@@ -98,10 +98,8 @@ export function ProductsSection() {
     <section className="bg-[oklch(0.96_0.02_263)] py-20">
       <div className="max-w-7xl mx-auto px-6">
         <Reveal>
-          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2 text-center">
-            Our Services
-          </p>
-          <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-12 text-center">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary mb-3 text-center">Our Services</p>
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-12 text-center tracking-tight leading-[1.1]">
             Everything your home needs.
           </h2>
         </Reveal>

@@ -10,10 +10,10 @@ export function FinancingBanner({ variant = "dark" }: FinancingBannerProps) {
     <section className={isDark ? "wsh-navy-gradient py-8" : "bg-[oklch(0.96_0.02_263)] py-8 border-y border-[oklch(0.90_0.01_263)]"}>
       <div className="max-w-5xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
         <div>
-          <p className={`text-lg md:text-xl font-black mb-1 ${isDark ? "text-white" : "text-primary"}`}>
+          <p className={`font-display text-xl md:text-2xl font-bold tracking-tight mb-1 ${isDark ? "text-white" : "text-primary"}`}>
             Flexible Financing Available
           </p>
-          <p className={`text-sm ${isDark ? "text-white/80" : "text-gray-600"}`}>
+          <p className={`text-sm font-light leading-relaxed ${isDark ? "text-white/75" : "text-gray-600"}`}>
             Build your dream home now, pay over time — get pre-qualified in minutes with no impact to your credit score.
           </p>
         </div>

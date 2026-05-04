@@ -62,21 +62,21 @@ export function PageHero({ badge, h1, subhead, breadcrumbs, cta, ctaSecondary, b
         )}
 
         {badge && (
-          <p className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-3">{badge}</p>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-white/50 mb-4">{badge}</p>
         )}
 
-        <h1 className="text-3xl md:text-5xl lg:text-6xl font-black leading-tight mb-4">{h1}</h1>
-        <p className="text-lg md:text-xl text-white/85 max-w-2xl mb-8">{subhead}</p>
+        <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.08] tracking-tight mb-5">{h1}</h1>
+        <p className="text-lg md:text-xl text-white/80 max-w-2xl mb-8 leading-relaxed font-light">{subhead}</p>
 
         {(cta || ctaSecondary) && (
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-3">
             {cta && (
-              <a href={cta.href} className="inline-flex items-center gap-2 bg-white text-primary font-bold px-6 py-3 rounded-sm hover:bg-white/90 transition text-sm uppercase tracking-wide">
+              <a href={cta.href} className="inline-flex items-center gap-2 bg-white text-primary font-semibold px-7 py-3.5 rounded-sm hover:bg-white/92 transition-all text-sm tracking-wide shadow-lg">
                 {cta.label} <ArrowRightIcon className="size-4" />
               </a>
             )}
             {ctaSecondary && (
-              <a href={ctaSecondary.href} className="inline-flex items-center gap-2 border-2 border-white/50 text-white font-semibold px-6 py-3 rounded-sm hover:bg-white/10 transition text-sm">
+              <a href={ctaSecondary.href} className="inline-flex items-center gap-2 border border-white/40 text-white/90 font-medium px-7 py-3.5 rounded-sm hover:bg-white/10 hover:border-white/60 transition-all text-sm">
                 {ctaSecondary.label}
               </a>
             )}

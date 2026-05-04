@@ -65,8 +65,9 @@ export default function ServicesPage() {
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-3">What We Build</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary mb-3">Our Specialties</p>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-gray-900 tracking-tight leading-[1.1] mb-3">What We Build</h2>
+            <p className="text-gray-500 font-light max-w-2xl mx-auto text-base leading-relaxed">
               Every project is different. Every homeowner&apos;s vision is unique. That&apos;s why we offer a complete range of remodeling services — all under one roof.
             </p>
           </div>
@@ -87,7 +88,8 @@ export default function ServicesPage() {
 
       <section className="bg-[oklch(0.96_0.02_263)] py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-4">Why Choose HVCG?</h2>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary mb-3">The Numbers</p>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-gray-900 tracking-tight leading-[1.1] mb-4">Why Choose HVCG?</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 mt-8">
             {[
               { stat: "500+", label: "Projects Completed" },

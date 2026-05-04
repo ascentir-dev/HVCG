@@ -36,11 +36,11 @@ export function ReviewsSection() {
     <section className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
-          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-3">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary mb-3">
             What Our Clients Say
           </p>
-          <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-4">
-            Your home is important to us. So is your trust.
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-gray-900 tracking-tight leading-[1.1] mb-4">
+            Your home is important to us.<br className="hidden md:block" /> So is your trust.
           </h2>
           <div className="flex items-center justify-center gap-2">
             {Array.from({ length: 5 }).map((_, i) => (

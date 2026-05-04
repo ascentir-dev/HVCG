@@ -60,8 +60,9 @@ export default function BathroomsPage() {
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-3">What We Offer</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">Every bathroom project is managed from design through final inspection by a dedicated project manager — no surprises, no subcontractor juggling.</p>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary mb-3">Bathroom Services</p>
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-gray-900 tracking-tight leading-[1.1] mb-3">What We Offer</h2>
+            <p className="text-gray-500 font-light max-w-2xl mx-auto leading-relaxed">Every bathroom project is managed from design through final inspection by a dedicated project manager — no surprises, no subcontractor juggling.</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {FEATURES.map((f) => (
@@ -81,7 +82,8 @@ export default function BathroomsPage() {
 
       <section className="bg-[oklch(0.96_0.02_263)] py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-2xl md:text-3xl font-black text-gray-900 mb-10 text-center">Our Process</h2>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary mb-3 text-center">How It Works</p>
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-gray-900 tracking-tight leading-[1.1] mb-10 text-center">Our Process</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {PROCESS.map((p) => (
               <div key={p.step} className="bg-white rounded-lg p-6 shadow-sm text-center">

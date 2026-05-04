@@ -26,14 +26,14 @@ export default function ContactPage() {
           <div className="grid lg:grid-cols-12 gap-12">
             {/* Form */}
             <div className="lg:col-span-7">
-              <h2 className="text-xl font-black text-gray-900 mb-6">Tell Us About Your Project</h2>
+              <h2 className="font-display text-2xl font-bold text-gray-900 tracking-tight mb-6">Tell Us About Your Project</h2>
               <ContactForm />
             </div>
 
             {/* Sidebar */}
             <div className="lg:col-span-5">
               <div className="bg-[oklch(0.96_0.02_263)] rounded-lg p-8 border border-[oklch(0.90_0.02_263)]">
-                <h2 className="text-xl font-black text-gray-900 mb-6">Get In Touch Directly</h2>
+                <h2 className="font-display text-xl font-bold text-gray-900 tracking-tight mb-6">Get In Touch Directly</h2>
 
                 <div className="space-y-5">
                   <a href={`tel:${BUSINESS.phoneTel}`} className="flex items-center gap-3 group">
@@ -91,7 +91,8 @@ export default function ContactPage() {
       {/* Map placeholder */}
       <section className="bg-[oklch(0.96_0.02_263)] py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-2xl font-black text-gray-900 mb-6 text-center">Serving All of Hudson Valley</h2>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary mb-3 text-center">Our Service Area</p>
+          <h2 className="font-display text-3xl font-bold text-gray-900 tracking-tight leading-[1.1] mb-6 text-center">Serving All of Hudson Valley</h2>
           <div className="bg-gray-200 rounded-lg h-80 flex items-center justify-center border border-gray-300 mb-8">
             <p className="text-gray-500 text-sm text-center px-6">
               Interactive service area map coming soon<br />

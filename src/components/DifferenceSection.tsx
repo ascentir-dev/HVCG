@@ -29,13 +29,11 @@ export function DifferenceSection() {
     <section className="bg-[oklch(0.96_0.02_263)] py-20">
       <div className="max-w-7xl mx-auto px-6">
         <Reveal>
-          <p className="text-xs font-semibold uppercase tracking-widest text-primary mb-2">
-            Why Homeowners Choose HVCG
-          </p>
-          <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-3">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-primary mb-3">Why Homeowners Choose HVCG</p>
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-gray-900 mb-3 tracking-tight leading-[1.1]">
             Results you&apos;ll love.<br />An experience you&apos;ll remember.
           </h2>
-          <p className="text-base text-gray-600 mb-12">
+          <p className="text-base text-gray-500 mb-12 font-light leading-relaxed">
             Hundreds of five-star reviews from Hudson Valley homeowners just like you.
           </p>
         </Reveal>
@@ -55,13 +53,14 @@ export function DifferenceSection() {
         </div>
 
         <Reveal direction="scale">
-          <div className="bg-primary rounded-2xl p-10 text-white text-center max-w-3xl mx-auto">
-            <QuoteIcon className="text-white/30 mx-auto mb-4" />
-            <blockquote className="text-xl md:text-2xl font-medium italic mb-6 leading-relaxed">
+          <div className="bg-primary rounded-2xl p-10 md:p-14 text-white text-center max-w-3xl mx-auto">
+            <QuoteIcon className="text-white/20 mx-auto mb-6" />
+            <blockquote className="font-display text-2xl md:text-3xl font-medium italic mb-6 leading-[1.4] tracking-tight">
               &ldquo;HVCG transformed our outdated kitchen into something out of a magazine. On time, on budget, and the crew was incredibly respectful of our home.&rdquo;
             </blockquote>
-            <p className="font-bold">— The Martínez Family</p>
-            <p className="text-white/70 text-sm mt-1">Kingston, NY · Google Review</p>
+            <div className="w-12 h-px bg-white/30 mx-auto mb-4" />
+            <p className="font-semibold text-sm tracking-wide">The Martínez Family</p>
+            <p className="text-white/50 text-xs mt-1 tracking-wide uppercase">Kingston, NY · Google Review</p>
           </div>
         </Reveal>
       </div>
