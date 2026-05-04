@@ -14,11 +14,11 @@ export function CTASection() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="tel:+18455550123"
+            href="tel:+18457285247"
             className="inline-flex items-center justify-center gap-2 bg-white text-primary font-bold px-8 py-3.5 rounded-sm hover:bg-white/90 transition"
           >
             <PhoneIcon className="size-5" />
-            (845) 555-0123
+            (845) 728-5247
           </a>
           <a
             href="#quote"
